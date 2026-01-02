@@ -1,4 +1,6 @@
-export default function handler(req, res) {
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+export default function handler(req: VercelRequest, res: VercelResponse) {
   // En producción en Vercel, configurarás la variable de entorno SECRET_KEY
   // En local o si no está configurada, usamos '1234' como fallback para pruebas
   const CORRECT_KEY = process.env.SECRET_KEY || '1234';
