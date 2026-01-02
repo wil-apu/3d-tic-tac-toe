@@ -34,6 +34,10 @@ export default function HomePage() {
               <li>Desafío estratégico aumentado</li>
             </ul>
           </div>
+
+          <div className="mt-8 text-center text-gray-500 text-sm">
+            Creado por <span className="font-medium text-gray-700">wil-apu</span>
+          </div>
         </div>
       </div>
     </div>
