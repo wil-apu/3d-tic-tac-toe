@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center p-4">
@@ -35,8 +37,11 @@ export default function HomePage() {
             </ul>
           </div>
 
-          <div className="mt-8 text-center text-gray-500 text-sm">
-            Creado por <span className="font-medium text-gray-700">wil-apu</span>
+          <div className="mt-8 text-center text-gray-500 text-sm flex flex-col gap-2">
+            <span>Creado por <span className="font-medium text-gray-700">wil-apu</span></span>
+            <Link to="/secret" className="text-xs text-blue-300 hover:text-blue-500 transition-colors">
+              Acceso Desarrollador
+            </Link>
           </div>
         </div>
       </div>
